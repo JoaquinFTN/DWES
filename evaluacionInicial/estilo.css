@@ -1,0 +1,163 @@
+/*Joaquín Francisco Telo Núñez*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+ul{
+    list-style: none;
+}
+body{
+    background-image: url(imagenes/fondoPantalla.jpg);
+}    
+header{
+    height: 20%;
+    background: none;
+    padding: 5%;
+}
+#titulo{
+    text-align: center;
+    text-shadow: 3px 2px white;
+}
+.navegacion{
+    width: 90%;
+    height: 10vh;
+    margin-left: 5%;
+    margin-bottom: 2px;
+    background-color: #205cb08e;
+    border: 1px black solid;
+    border-radius: 10px;
+}
+.botones{
+    width: 20%;
+    text-align: center;
+    float: left;
+    border: 2px rgba(255, 255, 255, 0.695) solid;
+    margin-left: 20%;
+    margin-top: 3%;
+    background-color: rgba(0, 0, 0, 0.695);
+    border-radius: 10px;
+}
+.botones :hover{
+    background-color: rgba(211, 211, 211, 0.695);
+    border-style: inset;
+    border-radius: 10px;
+}
+.botones > a{
+    margin: 5px 5px;
+    display: block;
+    color: white;
+}
+.lateral{
+    float: left;
+    width: 10%;
+    background-color: #113873;
+    border: 2px black solid;
+    box-shadow: 15px 15px 20px black;
+    border-radius: 20px;
+    padding: 2%;
+    margin: 2%;
+    text-align: center;
+}
+.lateral > ul > span{
+    font-size: x-large;
+    color: black;
+    font-weight: bolder;
+}
+.lateral > ul > li{
+    margin-top: 10%;
+}
+main{
+    width: 80%;
+    margin: 2% 10%;
+    background: none;
+}
+/*Aqui empieza la parte del Inicio*/
+.tabla{
+    width: 50%;
+    background: linear-gradient(to bottom left, white, #3b79cf, #16009e);
+    border: 2px black solid;
+    box-shadow: 15px 15px 20px;
+    border-collapse: collapse;
+    margin: 5% 25%;
+    text-align: center;
+}
+tbody > tr :nth-child(odd){
+    color: white;
+    text-align: left;
+    text-shadow: 3px 3px rgba(0, 0, 0, 0.379);
+}
+td{
+    border: 2px black solid;
+}
+.noticia{
+    width: 60%;
+    margin: 0 5% 20% 20%;
+    background-color: #113873;
+    text-align: justify;
+    border: 2px black solid;
+    box-shadow: 15px 15px 20px black;
+    color: white;
+}
+.noticia > img{
+    width: 50%;
+    margin: 2% 25%;
+    border: 2px black solid;
+}
+.textoNoticia{
+    padding: 0% 5%;
+}
+.textoNoticia > p, .textoNoticia > h1{
+    margin: 2%;
+}
+.textoNoticia > h1{
+    text-align: center;
+}
+.fecha{
+    font-size: x-small;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.4);
+}
+.parrafo > span, .textoNoticia > h1 > span{
+    color: black;
+    font-weight: bolder;
+}
+
+/*Aqui empieza la parte del Formulario*/
+.formulario{
+    width: 40%;
+    border: 2px black solid;
+    border-radius: 20px;
+    font-size: x-large;
+    margin: 4% 30%;
+    text-align: center;
+    background-color: rgba(58, 31, 179, 0.549);
+}
+.formulario > p{
+    margin: 2%;
+}
+fieldset{ /*quitamos los bordes de todos los fieldsets*/
+    border: none;
+}
+.formulario > textarea{
+    width: 90%;
+    resize: vertical;
+}
+.bononesForm > input{
+    margin: 5%;
+    width: 20%;
+    border: 2px white solid;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.477);
+}
+.informacion > p{
+    font-size: medium;
+}
+.informacion > input{
+    float: left;
+    margin-left: 10%;
+}

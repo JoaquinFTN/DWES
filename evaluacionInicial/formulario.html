@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Desastres naturales</title>
+        <link rel="stylesheet" href="estilo.css"/>
+    </head>
+    <body>
+        <header>
+            <h1 id="titulo">Desastres naturales</h1>
+        </header>
+        <nav class="navegacion">
+            <ul>
+                <li class="botones">
+                    <a href="index.html">inicio</a>
+                </li>
+                <li class="botones">
+                    <a href="formulario.html">formulario</a>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <form action="get.php" method="get" class="formulario">
+                <p>Nombre</p>
+                <input type="text" placeholder="texto" name="nombre"/>
+                <p>Apellidos</p>
+                <input type="text" placeholder="texto" name="apellidos"/>
+                <fieldset>
+                    <p>¿Testigo?</p>
+                    <input type="radio" name="testigo" value="si"/>si
+                    <input type="radio" name="testigo" value="no"/>no
+                </fieldset>
+                <fieldset>
+                    <p>Terminos uso</p>
+                    <input type="checkbox" name="terminos" value="aceptado"/>
+                    <p>Recibir informacion</p>
+                    <input type="checkbox" name="rInformacion" value="recibir"/>
+                </fieldset>
+                <p>Fecha</p>
+                <input type="date" name="fecha"/>
+                <p>Lugar</p>
+                <input type="text" placeholder="Badajoz España" name="lugar"/>
+                <p>Tipo</p>
+                <select name="tipo">
+                    <option value="Terremoto">Terremoto</option>
+                    <option value="Huracán">Huracán</option>
+                    <option value="Inundación">Inundación</option>
+                    <option value="Erupcion volcanica">Erupcion volcanica</option>
+                    <option value="Incendio forestal">Incendio forestal</option>
+                    <option value="Tsunami">Tsunami</option>
+                </select>
+                <p>Descripción</p>
+                <textarea name="descripcion" id="" cols="20" rows="5" placeholder="Descripción"></textarea>
+                <p>Quiero recibir informacion de:</p>
+                <fieldset class="informacion">
+                    <input type="checkbox" name="informacion[]" value="Terremoto"/>
+                    <p>Terremoto</p>
+                    <input type="checkbox" name="informacion[]" value="Huracán"/>
+                    <p>Huracán</p>
+                    <input type="checkbox" name="informacion[]" value="Inundación"/>
+                    <p>Inundación</p>
+                    <input type="checkbox" name="informacion[]" value="Erupcion volcanica"/>
+                    <p>Erupcion volcanica</p>
+                    <input type="checkbox" name="informacion[]" value="Incendio forestal"/>
+                    <p>Incendio forestal</p>
+                    <input type="checkbox" name="informacion[]" value="Tsunami"/>
+                    <p>Tsunami</p>
+                </fieldset>
+                <fieldset class="bononesForm">
+                    <input type="submit" value="Aceptar"/>
+                    <input type="submit" value="Reiniciar"/>
+                </fieldset>
+            </form>
+        </main>
+    </body>
+</html>
