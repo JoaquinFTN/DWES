@@ -1,0 +1,26 @@
+.par, .impar{
+    border: 2px black solid;
+    border-collapse: collapse;
+    width: 50%;
+    text-align: center;
+}
+.par td{
+    border: 2px black solid;
+}
+.impar td{
+    border: 2px black solid;
+}
+.par td:nth-child(odd){
+    background-color: rgb(16, 106, 197);
+
+}
+.par tr:nth-child(2){
+    text-align: left;
+}
+.impar td:nth-child(odd){
+    background-color: rgb(17, 192, 49);
+
+}
+.impar tr:nth-child(2){
+    text-align: right;
+}
