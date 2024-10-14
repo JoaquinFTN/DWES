@@ -65,11 +65,10 @@
         }
         public function generarFecha(){
             $dia = $this->calcularBisiesto($this->fecha[0]);
-            var_dump($this->fecha);
             if($dia < $this->fecha[2] && $this->fecha[1] == 2){
-                echo "La fecha no es correcta.";
+                return "ERROR: La fecha no es correcta.";
             }else{
-                echo $this->fecha[2]."/".$this->meses_dias[$this->fecha[1]]['mes']."/".$this->fecha[0];
+                return $this->fecha[2]."/".$this->meses_dias[$this->fecha[1]]['mes']."/".$this->fecha[0];
             }
         }
     }
